@@ -1,18 +1,43 @@
 <ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon name="menu" class="colorIcons"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title text-center class="colorIcons">Applied Chemistry</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="md-share" class="colorIcons"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content>
+  <ion-card class="cardCss" *ngFor="let list of CardList">
+      <ion-item>
+        <div item-start class="textView">
+          U1
+        </div>
+        <div class="contentTitle">
+          <span class="textTitle">Unit 2 HandWritten</span>
+          <ion-icon name="ios-appstore-outline" class="iconFloat"></ion-icon>
+          <br>
+          <span class="iconText">Regular</span>
+        </div>
+        <hr>
+        <div class="contentTitle">
+          <ion-icon name="md-person" class="contentIcon"></ion-icon> 
+          <span class="author"> Author : <span class="name">{{list.author}} </span></span>
+          <br>
+          <ion-icon name="md-calendar" class="contentIcon"></ion-icon> 
+          <span class="author"> Upload Date : <span class="name">{{list.uploadedDate | date}}</span> </span>
+        </div>
+        <hr>
+        <div class="contentTitle" >
+          <ion-icon name="ios-eye" class="contentIcon"></ion-icon>
+          <span class="contentIcon"> {{list.views}}</span>
+          <span class="fileSize"> {{ list.fileSize}}</span>
+        </div>
+      </ion-item>
+  </ion-card>
 </ion-content>

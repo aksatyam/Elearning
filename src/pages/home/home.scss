@@ -1,3 +1,79 @@
 page-home {
-
+    .toolbar-background-md,.toolbar-background-ios {
+        background-color: #3a6eba;
+    }
+    .toolbar-title{
+        color: white;
+    }
+    .colorIcons{
+        color: white;
+    }
+    .item-md, .item-ios{
+        padding-left: 0px;
+    }
+    .textView{
+        font-size: 15vw;
+        padding: 45px 15px 45px 15px;
+        background-color: #3a6eba;
+        color: white;
+    }
+    .item-md [item-start], .item-ios [item-start]{
+        margin: 0 0 0 0;
+    }
+    .item-md, .item-ios{
+        font-size:1.2rem;
+    }
+    .cardCss{
+        border-radius: 6px;
+    }
+    .item-inner{
+        -webkit-align-items:initial!important;
+        align-self:none;
+        padding-right: 0px!important;
+    }
+    .label-md, .label-ios{
+        margin: 0 0 0 0!important;
+    }
+    .contentTitle{
+        padding: 8px 0px 8px 8px!important;
+        vertical-align: center;
+    }
+    .textTitle{
+        color: #999393;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .iconFloat{
+        float: right;
+        color: #3a6eba;
+        padding-right:10px; 
+    }
+    .iconText{
+        float: right;
+        font-size: 2.5vw;
+        padding-top: 0
+        px;
+        color: #3a6eba;
+        padding-right: 4px;
+    }
+    .contentIcon{
+        font-size: 1.3rem;
+        color: #999393;
+    }
+    .author{
+        font-size: 1.3rem;
+        color: #999393;
+        padding-left: 3px;
+    }
+    .author{
+        .name{
+            font-weight: bold;
+        }
+    }
+    .fileSize{
+        font-size: 1.3rem;
+        color: #999393;
+        float: right;
+        padding-right: 5px;
+    }
 }
